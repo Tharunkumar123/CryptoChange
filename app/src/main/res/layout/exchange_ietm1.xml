@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp65"
+        android:text="Exchange:"
+        android:textColor="#FBFBFB"
+        android:textSize="@dimen/sp15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="@dimen/dp2"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/dp4"
+        android:textColor="#FBFBFB"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="@dimen/dp2"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintBottom_toBottomOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/editText2">
+
+
+        <Spinner
+            android:id="@+id/spinner2"
+            style="@style/spinnertheam"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp2"
+            android:backgroundTint="#737EA4"
+            android:layout_gravity="center"
+            android:popupBackground="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp35"
+        android:text="Receive:"
+        android:textColor="#FBFBFB"
+        android:textSize="@dimen/sp15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="@dimen/dp2"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/dp4"
+        android:textColor="#FBFBFB"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="@dimen/dp2"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintBottom_toBottomOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/editText3">
+
+
+        <Spinner
+            android:id="@+id/spinner3"
+            style="@style/spinnertheam"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp2"
+            android:backgroundTint="#737EA4"
+            android:popupBackground="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/materialbutton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="@dimen/dp8"
+        android:background="@drawable/materialbutton_unselected"
+        android:gravity="center"
+        android:padding="@dimen/dp8"
+        android:text="clear"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        app:cornerRadius="@dimen/dp24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <Button
+        android:id="@+id/materialbutton1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="@dimen/dp8"
+        android:background="@drawable/materialbutton_background"
+        android:gravity="center"
+        android:padding="@dimen/dp8"
+        android:text="next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        app:cornerRadius="@dimen/dp24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:ordering="sequentially" >
+    <objectAnimator
+        android:duration="900"
+        android:propertyName="rotationY"
+        android:valueFrom="0"
+        android:valueTo="540"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:repeatMode="reverse">
+    </objectAnimator>
+    <objectAnimator
+        android:duration="900"
+        android:propertyName="rotationY"
+        android:valueFrom="540"
+        android:valueTo="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:repeatMode="reverse">
+    </objectAnimator>
+
+
+
+</set>

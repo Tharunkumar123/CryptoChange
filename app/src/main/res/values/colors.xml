@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#282E40</color>
+    <color name="colorPrimaryDark">#0B0F1C</color>
+    <color name="colorAccent">#445177</color>
+    <color name="grey">#404040</color>
+    <color name="blue">#5c8aea</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black2">#3e4148</color>
+    <color name="textcolour">#11cfc5</color>
+    <color name="red">#D81B60</color>
+    <color name="register_bk_color">#11CFC5</color>
+</resources>
